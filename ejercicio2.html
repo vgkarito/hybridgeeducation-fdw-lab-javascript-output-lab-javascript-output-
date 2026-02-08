@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+<h1>Demostración de Output en Javascript</h1>
+
+<!-- Botón alerta -->
+<button onclick="mostrarNombre()">
+Mostrar nombre
+</button>
+
+<br><br>
+
+<!-- Párrafo dinámico -->
+<p id="texto"></p>
+
+<button onclick="actualizarTexto()">
+Actualizar texto
+</button>
+
+<script>
+
+function mostrarNombre(){
+    alert("Carolina Valadez");
+}
+
+function actualizarTexto(){
+    document.getElementById("texto").innerHTML =
+        "¡Texto actualizado con Javascript!";
+}
+
+// Mensaje en consola al cargar
+console.log("Página cargada correctamente");
+
+</script>
+
+</body>
+</html>
